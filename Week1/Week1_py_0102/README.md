@@ -1,5 +1,5 @@
-# Введение.
-## Задание для самостоятельного решения
+# Настройка рабочего окружения.
+## Эксперемент с библиотекой pytest
 
 ### Класс "Темы" (Themes)
 
@@ -12,27 +12,47 @@
 \- get_themes() возвращает список тем;
 \- get first() возвращает первую тему.
 
+```PYTHON
+# pytest.ini
+[pytest]
+addopts = -vv -p no:cacheprovider
+```
+
+В файле `pytest.ini` хранятся настройки библиотеки.
+
+```PYTHON
+#test_programm.py
+try:
+    import main
+except ImportError:
+    raise AssertionError("Модуль 'main' не обнаружен")
+
+EXPECTED_FUNC_NAME = "say_hello"
+
+
+def test_say_hello_exists():
+    assert hasattr(main, EXPECTED_FUNC_NAME), (
+        f"Функция '{EXPECTED_FUNC_NAME}' не обнаружена в модуле 'main'")
+
+
+def test_say_hello_without_exceptions():
+    try:
+        main.say_hello()
+    except Exception as error:
+        raise AssertionError(
+            f"При запуске функции '{EXPECTED_FUNC_NAME}' возникло"
+            f"исключение: '{type(error).__name__}': '{error}"
+        )
+
+```
+
+Эти тесты проверяют:
+- наличие функции с именем say_hello в коде из файла `main.py`
+- что эта функция запускается без ошибок
 
 ```PYTHON
 #main.py
-class Themes:
-    def __init__(self, *themes):
-        self.themes = list(themes)
-
-    def add_theme(self, value):
-        self.themes.append(value)
-
-    def shift_one(self):
-        self.themes.insert(0, self.themes.pop())
-
-    def reverse_order(self):
-        self.themes.reverse()
-
-    def get_themes(self):
-        return self.themes
-
-    def get_first(self):
-        return self.themes[0]
+def say_hello():
+    print("Привет, Практикум!")
 ```
-
 
