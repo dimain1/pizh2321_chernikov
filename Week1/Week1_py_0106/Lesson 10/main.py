@@ -1,5 +1,5 @@
 """Документирование кода"""
-from rolling import room
+import room
 
 r1 = room.Room(float(input("Введите ширину комнаты: ")),
                float(input("Введите длину комнаты: ")),
@@ -8,7 +8,6 @@ for i in range(int(input("Введите сумму окон и дверей в 
     r1.add_wd(float(input("Введите ширину окна или двери: ")),
               float(input("Ввдетие длину окна или двери: ")))
 print(f"Площадь оклеиваемой поверхности: {r1.work_surface()}")
-print(f"Необходимое количество рулонов: {r1.roll_count(
-    float(input("Введите ширину рулона обоев: ")),
-    float(input("Введите длину рулона обоев: "))
-    )}")
+rolls = r1.roll_count(float(input("Введите ширину рулона обоев: ")),
+                      float(input("Введите длину рулона обоев: ")))
+print(f"Необходимое количество рулонов: {rolls}")

@@ -1,3 +1,6 @@
+"""Конструктор класса - метод __init__()"""
+
+
 class Person:
     def __init__(self, name, second_name, qualification=1):
         self.name = name

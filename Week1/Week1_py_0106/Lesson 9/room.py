@@ -1,5 +1,9 @@
-from rolling import windoor
 from math import ceil
+
+
+class WinDoor:
+    def __init__(self, x, y):
+        self.square = x * y
 
 
 class Room:
@@ -10,7 +14,7 @@ class Room:
         self.wd = []
 
     def add_wd(self, w, h):
-        self.wd.append(windoor.WinDoor(w, h))
+        self.wd.append(WinDoor(w, h))
 
     def work_surface(self):
         new_square = self.square()

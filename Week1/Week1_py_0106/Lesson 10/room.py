@@ -1,6 +1,12 @@
 """The module contains a room class"""
-from rolling import windoor
 from math import ceil
+
+
+class WinDoor:
+    """The class of windows and doors. The constructor
+    takes width and length"""
+    def __init__(self, x, y):
+        self.square = x * y
 
 
 class Room:
@@ -13,7 +19,7 @@ class Room:
 
     def add_wd(self, w, h):
         """A method for adding a window or door to a room"""
-        self.wd.append(windoor.WinDoor(w, h))
+        self.wd.append(WinDoor(w, h))
 
     def work_surface(self):
         """A method for calculating the surface to be painted"""

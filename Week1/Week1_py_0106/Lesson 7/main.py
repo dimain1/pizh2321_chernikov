@@ -26,7 +26,7 @@ class Room:
     def square(self):
         return 2 * self.z * (self.x + self.y)
 
-    def roll_count(self, x, y):
+    def roll_сount(self, x, y):
         return math.ceil(self.work_surface() / (x*y))
 
 
@@ -37,7 +37,6 @@ for i in range(int(input("Введите сумму окон и дверей в 
     r1.add_wd(float(input("Введите ширину окна или двери: ")),
               float(input("Ввдетие длину окна или двери: ")))
 print(f"Площадь оклеиваемой поверхности: {r1.work_surface()}")
-print(f"Необходимое количество рулонов: {r1.roll_count(
-    float(input("Введите ширину рулона обоев: ")),
-    float(input("Введите длину рулона обоев: "))
-    )}")
+rolls = r1.roll_сount(float(input("Введите ширину рулона обоев: ")),
+                      float(input("Введите длину рулона обоев: ")))
+print(f"Необходимое количество рулонов: {rolls}")
