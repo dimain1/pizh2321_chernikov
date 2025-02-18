@@ -89,5 +89,3 @@ class SpecialThemes(Themes):
         else:
             raise ValueError("Theme must be a string.")
 ```
-
-
