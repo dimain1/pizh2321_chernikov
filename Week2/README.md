@@ -25,7 +25,7 @@ class Themes:
 
         :param themes: A variable number of theme arguments.
         """
-        self._themes = list(themes)
+        self.__themes = list(themes)
 
     def add_theme(self, value):
         """
@@ -33,19 +33,19 @@ class Themes:
 
         :param value: The theme to be added.
         """
-        self._themes.append(value)
+        self.__themes.append(value)
 
     def shift_one(self):
         """
         Move the last theme to the beginning of the list.
         """
-        self._themes.insert(0, self._themes.pop())
+        self.__themes.insert(0, self.__themes.pop())
 
     def reverse_order(self):
         """
         Reverse the order of the themes.
         """
-        self._themes.reverse()
+        self.__themes.reverse()
 
     def get_themes(self):
         """
@@ -53,7 +53,7 @@ class Themes:
 
         :return: The list of themes.
         """
-        return self._themes
+        return self.__themes
 
     def get_first(self):
         """
@@ -61,7 +61,7 @@ class Themes:
 
         :return: The first theme.
         """
-        return self._themes[0]
+        return self.__themes[0]
 
 
 class SpecialThemes(Themes):
@@ -83,8 +83,5 @@ class SpecialThemes(Themes):
 
         :param value: The theme to be added.
         """
-        if isinstance(value, str):
-            super().add_theme(value)
-        else:
-            raise ValueError("Theme must be a string.")
+        super().add_theme(value)
 ```
