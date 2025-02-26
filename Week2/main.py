@@ -5,6 +5,7 @@ class AbstractThemes(ABC):
     """
     An abstract base class to represent a collection of themes.
     """
+    __themes: list
 
     @abstractmethod
     def add_theme(self, value):
@@ -52,7 +53,6 @@ class Themes(AbstractThemes):
     """
     A class to represent a collection of themes.
     """
-    __themes: list
 
     def __init__(self, *themes):
         """
