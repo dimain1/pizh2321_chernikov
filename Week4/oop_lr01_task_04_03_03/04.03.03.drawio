@@ -4,7 +4,7 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="WLNmPTrUObRmP3kyPri5-13" value="Classname" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="WLNmPTrUObRmP3kyPri5-13" value="TimeDeposit" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="320" y="240" width="160" height="180" as="geometry" />
         </mxCell>
         <mxCell id="WLNmPTrUObRmP3kyPri5-14" value="- name: str&lt;div&gt;- _interest_rate: float&lt;/div&gt;&lt;div&gt;- _period_limit: tuple&lt;/div&gt;&lt;div&gt;- _sum_limit : tuple&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="WLNmPTrUObRmP3kyPri5-13">
