@@ -16,7 +16,7 @@ if __name__ == "__main__":
         print("\n-----")
         print("Нажмите 1, чтобы подобрать вклад, или что угодно для выхода.")
 
-        answer = input()
+        answer: str = input()
         if answer == "1":
 
             initial_sum = float(input("1/2: Введите начальную сумму вклада: "))
