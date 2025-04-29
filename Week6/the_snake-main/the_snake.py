@@ -18,7 +18,7 @@ RIGHT = (1, 0)
 BOARD_BACKGROUND_COLOR = (0, 0, 0)
 
 # Цвет границы ячейки
-BORDER_COLOR = (93, 216, 228)
+BORDER_COLOR = (255, 255, 255)
 
 # Цвет яблока
 APPLE_COLOR = (255, 0, 0)

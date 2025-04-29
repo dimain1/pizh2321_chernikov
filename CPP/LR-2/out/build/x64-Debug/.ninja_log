@@ -1,0 +1,20 @@
+# ninja log v6
+1866	1926	7676622338250876	lib/gtest.lib	ee1e9bb3a9792125
+15	327	7676622247788150	bin/CMakeFiles/lab2.dir/main.cpp.obj	41a9fce6cbdfc2e5
+1770	1842	7676622337296554	lib/gmock.lib	8d44af93dd3d138e
+10	346	7676622247748983	lib/CMakeFiles/number.dir/number.cpp.obj	8e160d557d235bc0
+347	382	7676622251116747	lib/number.lib	ebc4eda39f8bd9d
+382	622	7676622251466777	bin/lab2.exe	e73465d24f373668
+41	915	7676622319996918	_deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj	518ebfc82d8b345c
+1960	2368	7676622343189807	tests/number_tests[1]_tests.cmake	1a2893c0bbb208b7
+46	1225	7676622320046600	tests/CMakeFiles/number_tests.dir/number_test.cpp.obj	b0efc7a24d38c936
+73	1020	7676622320316569	_deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.obj	198cac1334fd4bcb
+68	1347	7676622320266565	_deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/src/gmock-all.cc.obj	a27677ac27182fd2
+58	1360	7676622320156561	_deps/googletest-build/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.obj	31ba65386ed7c732
+52	1770	7676622320106574	_deps/googletest-build/googlemock/CMakeFiles/gmock.dir/__/googletest/src/gtest-all.cc.obj	5851f515b8d4afa5
+37	1866	7676622319947669	_deps/googletest-build/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.obj	a7c55f67f8ce7b63
+63	1876	7676622320216548	_deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/__/googletest/src/gtest-all.cc.obj	49f8a4566f01d560
+1876	1936	7676622338340870	lib/gmock_main.lib	856ac03ae88f1776
+1960	2368	7676622343189807	C:/Users/dimac/OneDrive/Рабочий стол/ООП/Dev/CPP/LR-2/out/build/x64-Debug/tests/number_tests[1]_tests.cmake	1a2893c0bbb208b7
+1926	1959	7676622338845825	lib/gtest_main.lib	ed18591bd9d39ec3
+1960	2368	7676622343189807	tests/number_tests.exe	1a2893c0bbb208b7

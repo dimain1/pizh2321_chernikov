@@ -1,0 +1,3 @@
+C:/Users/dimac/OneDrive/Рабочий стол/ООП/Dev/LR-1/out/build/x64-Debug/CMakeFiles/main.dir
+C:/Users/dimac/OneDrive/Рабочий стол/ООП/Dev/LR-1/out/build/x64-Debug/CMakeFiles/edit_cache.dir
+C:/Users/dimac/OneDrive/Рабочий стол/ООП/Dev/LR-1/out/build/x64-Debug/CMakeFiles/rebuild_cache.dir
